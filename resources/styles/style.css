@@ -23,3 +23,7 @@ div.sponsor-card:active {
     box-shadow: inset 4px 4px 4px hsl(0, 0%, 40%), 2px 2px 2px hsl(0, 0%, 40%);
     transition: transform 0.4s, box-shadow 0.4s;
 }
+
+ul.navbar-nav>li.nav-item {
+    margin: 0 5% 0 0;
+}
