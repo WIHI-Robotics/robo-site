@@ -1,1 +1,25 @@
-nav.navba
+nav.navbar {
+    z-index: 99;
+    transition: 0.4s;
+}
+
+img#logo {
+    transition: 0.4s;
+}
+
+a.nav-link {
+    transition: 0.4s;
+}
+
+div.sponsor-card:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+    box-shadow: hsl(0, 0%, 40%) 0 10px 7px;
+    transition: transform 0.4s, box-shadow 0.2s ease-out;
+}
+
+div.sponsor-card:active {
+    transform: none;
+    box-shadow: inset 4px 4px 4px hsl(0, 0%, 40%), 2px 2px 2px hsl(0, 0%, 40%);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
