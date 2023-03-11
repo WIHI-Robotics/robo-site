@@ -8,7 +8,7 @@ navLinks.forEach(link => {
 })
 
 const shrinkNav = () => {
-    if (document.body.scrollTop > 99 || document.documentElement.scrollTop > 99) {
+    if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
         navMenuButton.style.transform = "scale(0.667)"
         navLogoImage.width = 50
         if (navbar.classList.contains('py-3')) {

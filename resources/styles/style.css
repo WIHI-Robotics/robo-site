@@ -32,13 +32,43 @@ ul.navbar-nav>li.nav-item {
     margin: 0 5% 0 0;
 }
 
+div.member-card {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+div.card-body.person-desc {
+    max-height: 200px;
+    overflow: scroll;
+}
+
+div.img-holder {
+    height: min-content;
+    width: max-content;
+}
+
+img.person-img {
+    height: 200px;
+    width: auto;
+    overflow: hidden;
+}
+
 p.card-text.fs-6 {
     font-size: 14pt !important;
     line-height: 1.15;
 }
 
 @media only screen and (max-width: 700px) {
-    div.img-holder {
-        display: none;
+    img.person-img {
+        height: 150px;
+    }
+
+    div.card-body.person-desc {
+        max-height: 150px;
+    }
+
+    div.container.members {
+        width: 90vw !important;
     }
 }

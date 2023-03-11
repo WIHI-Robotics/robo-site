@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robotics Team Homepage</title>
+    <title>WIHI Robotics - Team</title>
     <script src="../../resources/scripts/app.js" defer></script>
     <link rel="stylesheet" href="../../resources/styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -12,7 +12,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5 py-3 sticky-top">
     <div class="container-fluid">
-        <a href="#" class="navbar-brand">
+        <a href="../../index.html" class="navbar-brand">
             <img id="logo" src="../../resources/images/robo-wolves.png" alt="Logo" width="75" class="d-inline-block align-text-md">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
@@ -26,26 +26,26 @@
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                        <a href="#" class="nav-link active" aria-current="page">Home</a>
+                        <a href="../../index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
                             About
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#" class="dropdown-item">Team</a></li>
-                            <li><a href="#" class="dropdown-item">Robot</a></li>
-                            <li><a href="#" class="dropdown-item">Values</a></li>
-                            <li><a href="#" class="dropdown-item">Competition</a></li>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a href="../../pages/about/team.html" class="dropdown-item active" aria-current="page">Team</a></li>
+                            <li><a href="../../pages/about/robot.html" class="dropdown-item">Robot</a></li>
+                            <li><a href="../../pages/about/values.html" class="dropdown-item">Values</a></li>
+                            <li><a href="../../pages/about/competition.html" class="dropdown-item">Competition</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Sponsorship
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#" class="dropdown-item">Sponsor List</a></li>
-                            <li><a href="#" class="dropdown-item">Become A Sponsor</a></li>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a href="../../pages/sponsorship/list.html" class="dropdown-item">Sponsor List</a></li>
+                            <li><a href="../../pages/sponsorship/become-sponsor.html" class="dropdown-item">Become A Sponsor</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -54,163 +54,143 @@
     </div>
 </nav>
 
-<div class="container grid my-5" style="width: 80vw" id="team">
+<div class="container grid my-5 members" style="width: 80vw" id="team">
     <h2 class="mx-auto display-5 text-center">Our Members</h2>
     <div class="row g-3">
         <div class="col-lg my-3">
-            <div class="card">
-                <div class="card-container d-flex justify-content-center">
-                    <div class="w-25 mr-2 img-holder">
-                        <img src="../../resources/images/user-solid.svg" class="img-fluid rounded-start" alt="person">
-                    </div>
-                    <div class="card-body w-75">
-                        <h5 class="card-title">Eric Phelps</h5>
-                        <h6 class="card-subtitle text-muted mb-2">Faculty Advisor</h6>
-                        <p class="card-text fs-6 fw-light"></p>
-                    </div>
+            <div class="card member-card">
+                <div class="img-holder">
+                    <img src="../../resources/images/user-solid.svg" class="rounded-start person-img" alt="person">
+                </div>
+                <div class="card-body person-desc">
+                    <h5 class="card-title">Eric Phelps</h5>
+                    <h6 class="card-subtitle text-muted mb-2">Faculty Advisor</h6>
+                    <p class="card-text fs-6 fw-light"></p>
                 </div>
             </div>
         </div>
         <div class="col-lg my-3">
-            <div class="card">
-                <div class="card-container d-flex justify-content-center">
-                    <div class="w-25 mr-2 img-holder">
-                        <img src="../../resources/images/user-solid.svg" class="img-fluid rounded-start" alt="person">
-                    </div>
-                    <div class="card-body w-75">
-                        <h5 class="card-title">Tristan Chapman</h5>
-                        <h6 class="card-subtitle text-muted mb-2">Team Leader</h6>
-                        <p class="card-text fs-6 fw-light"></p>
-                    </div>
+            <div class="card member-card">
+                <div class="img-holder">
+                    <img src="../../resources/images/user-solid.svg" class="rounded-start person-img" alt="person">
+                </div>
+                <div class="card-body person-desc">
+                    <h5 class="card-title">Tristan Chapman</h5>
+                    <h6 class="card-subtitle text-muted mb-2">Team Leader</h6>
+                    <p class="card-text fs-6 fw-light"></p>
                 </div>
             </div>
         </div>
     </div>
     <div class="row g-3">
         <div class="col-lg my-3">
-            <div class="card">
-                <div class="card-container d-flex justify-content-center">
-                    <div class="w-25 mr-2 img-holder">
-                        <img src="../../resources/images/user-solid.svg" class="img-fluid rounded-start" alt="person">
-                    </div>
-                    <div class="card-body w-75">
-                        <h5 class="card-title">Katherine Davis</h5>
-                        <h6 class="card-subtitle text-muted mb-2">Team Leader</h6>
-                        <p class="card-text fs-6 fw-light"></p>
-                    </div>
+            <div class="card member-card">
+                <div class="img-holder">
+                    <img src="../../resources/images/user-solid.svg" class="rounded-start person-img" alt="person">
+                </div>
+                <div class="card-body person-desc">
+                    <h5 class="card-title">Katherine Davis</h5>
+                    <h6 class="card-subtitle text-muted mb-2">Team Leader</h6>
+                    <p class="card-text fs-6 fw-light"></p>
                 </div>
             </div>
         </div>
         <div class="col-lg my-3">
-            <div class="card">
-                <div class="card-container d-flex justify-content-center">
-                    <div class="w-25 mr-2 img-holder">
-                        <img src="../../resources/images/user-solid.svg" class="img-fluid rounded-start" alt="person">
-                    </div>
-                    <div class="card-body w-75">
-                        <h5 class="card-title">Pierre-Louis Piguet</h5>
-                        <h6 class="card-subtitle text-muted mb-2"> Team Leader</h6>
-                        <p class="card-text fs-6 fw-light"></p>
-                    </div>
+            <div class="card member-card">
+                <div class="img-holder">
+                    <img src="../../resources/images/user-solid.svg" class="rounded-start person-img" alt="person">
+                </div>
+                <div class="card-body person-desc">
+                    <h5 class="card-title">Pierre-Louis Piguet</h5>
+                    <h6 class="card-subtitle text-muted mb-2"> Team Leader</h6>
+                    <p class="card-text fs-6 fw-light"></p>
                 </div>
             </div>
         </div>
     </div>
     <div class="row g-3">
         <div class="col-lg my-3">
-            <div class="card">
-                <div class="card-container d-flex justify-content-center">
-                    <div class="w-25 mr-2 img-holder">
-                        <img src="../../resources/images/haashir-ahmed.jpg" class="img-fluid rounded-start" alt="person">
-                    </div>
-                    <div class="card-body w-75">
-                        <h5 class="card-title">Haashir Ahmed</h5>
-                        <h6 class="card-subtitle text-muted mb-2">Building Lead</h6>
-                        <p class="card-text fs-6 fw-light">
-                            Haashir is a diligent hard-worker, dedicated to inspiring his fellow members to success.
-                            With experience in programming and robotics competitions, Haashir uses his knowledge and leadership to guide the team to victory.
-                        </p>
-                    </div>
+            <div class="card member-card">
+                <div class="img-holder">
+                    <img src="../../resources/images/haashir-ahmed.jpg" class="rounded-start person-img" alt="person">
+                </div>
+                <div class="card-body person-desc">
+                    <h5 class="card-title">Haashir Ahmed</h5>
+                    <h6 class="card-subtitle text-muted mb-2">Building Lead</h6>
+                    <p class="card-text fs-6 fw-light">
+                        Haashir is a diligent hard-worker, dedicated to inspiring his fellow members to success.
+                        With experience in programming and robotics competitions, Haashir uses his knowledge and leadership to guide the team to victory.
+                    </p>
                 </div>
             </div>
         </div>
         <div class="col-lg my-3">
-            <div class="card">
-                <div class="card-container d-flex justify-content-center">
-                    <div class="w-25 mr-2 img-holder">
-                        <img src="../../resources/images/user-solid.svg" class="img-fluid rounded-start" alt="person">
-                    </div>
-                    <div class="card-body w-75">
-                        <h5 class="card-title">Aydin Akhoon</h5>
-                        <h6 class="card-subtitle text-muted mb-2">Build Team</h6>
-                        <p class="card-text fs-6 fw-light">
-                            Aydin is an individual with a passion for collaboration and pursuit of the scientific design process.
-                            He joined the team hoping to perfect his ability to utilize the scientific method to solve real world problems.
-                        </p>
-                    </div>
+            <div class="card member-card">
+                <div class="img-holder">
+                    <img src="../../resources/images/aydin-akhoon.png" class="rounded-start person-img" alt="person">
+                </div>
+                <div class="card-body person-desc">
+                    <h5 class="card-title">Aydin Akhoon</h5>
+                    <h6 class="card-subtitle text-muted mb-2">Build Team</h6>
+                    <p class="card-text fs-6 fw-light">
+                        Aydin is an individual with a passion for collaboration and pursuit of the scientific design process.
+                        He joined the team hoping to perfect his ability to utilize the scientific method to solve real world problems.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
     <div class="row g-3">
         <div class="col-lg my-3">
-            <div class="card">
-                <div class="card-container d-flex justify-content-center">
-                    <div class="w-25 mr-2 img-holder">
-                        <img src="../../resources/images/user-solid.svg" class="img-fluid rounded-start" alt="person">
-                    </div>
-                    <div class="card-body w-75">
-                        <h5 class="card-title">Ari Shtein</h5>
-                        <h6 class="card-subtitle text-muted mb-2">Website Lead</h6>
-                        <p class="card-text fs-6 fw-light">
-                            Ari wasn't a robotics expert when he joined, but has developed his design and engineering skills as a member.
-                            He brought some coding ability and hopes he can expand it more as a part of the team.
-                        </p>
-                    </div>
+            <div class="card member-card">
+                <div class="img-holder">
+                    <img src="../../resources/images/user-solid.svg" class="rounded-start person-img" alt="person">
+                </div>
+                <div class="card-body person-desc">
+                    <h5 class="card-title">Ari Shtein</h5>
+                    <h6 class="card-subtitle text-muted mb-2">Website Lead</h6>
+                    <p class="card-text fs-6 fw-light">
+                        Ari wasn't a robotics expert when he joined, but has developed his design and engineering skills as a member.
+                        He brought some coding ability and has expanded it as a part of the team.
+                    </p>
                 </div>
             </div>
         </div>
         <div class="col-lg my-3">
-            <div class="card">
-                <div class="card-container d-flex justify-content-center">
-                    <div class="w-25 mr-2 img-holder">
-                        <img src="../../resources/images/user-solid.svg" class="img-fluid rounded-start" alt="person">
-                    </div>
-                    <div class="card-body w-75">
-                        <h5 class="card-title"></h5>
-                        <h6 class="card-subtitle text-muted mb-2"></h6>
-                        <p class="card-text fs-6 fw-light"></p>
-                    </div>
+            <div class="card member-card">
+                <div class="img-holder">
+                    <img src="../../resources/images/user-solid.svg" class="rounded-start person-img" alt="person">
+                </div>
+                <div class="card-body person-desc">
+                    <h5 class="card-title"></h5>
+                    <h6 class="card-subtitle text-muted mb-2"></h6>
+                    <p class="card-text fs-6 fw-light"></p>
                 </div>
             </div>
         </div>
     </div>
     <div class="row g-3">
         <div class="col-lg my-3">
-            <div class="card">
-                <div class="card-container d-flex justify-content-center">
-                    <div class="w-25 mr-2 img-holder">
-                        <img src="../../resources/images/user-solid.svg" class="img-fluid rounded-start" alt="person">
-                    </div>
-                    <div class="card-body w-75">
-                        <h5 class="card-title">Eliza Makhdoom</h5>
-                        <h6 class="card-subtitle text-muted mb-2">Building Lead</h6>
-                        <p class="card-text fs-6 fw-light"></p>
-                    </div>
+            <div class="card member-card">
+                <div class="img-holder">
+                    <img src="../../resources/images/user-solid.svg" class="rounded-start person-img" alt="person">
+                </div>
+                <div class="card-body person-desc">
+                    <h5 class="card-title">Eliza Makhdoom</h5>
+                    <h6 class="card-subtitle text-muted mb-2">Building Lead</h6>
+                    <p class="card-text fs-6 fw-light"></p>
                 </div>
             </div>
         </div>
         <div class="col-lg my-3">
-            <div class="card">
-                <div class="card-container d-flex justify-content-center">
-                    <div class="w-25 mr-2 img-holder">
-                        <img src="../../resources/images/user-solid.svg" class="img-fluid rounded-start" alt="person">
-                    </div>
-                    <div class="card-body w-75">
-                        <h5 class="card-title">Jesus Herrera</h5>
-                        <h6 class="card-subtitle text-muted mb-2">Organization Lead</h6>
-                        <p class="card-text fs-6 fw-light"></p>
-                    </div>
+            <div class="card member-card">
+                <div class="img-holder">
+                    <img src="../../resources/images/user-solid.svg" class="rounded-start person-img" alt="person">
+                </div>
+                <div class="card-body person-desc">
+                    <h5 class="card-title">Jesus Herrera</h5>
+                    <h6 class="card-subtitle text-muted mb-2">Organization Lead</h6>
+                    <p class="card-text fs-6 fw-light"></p>
                 </div>
             </div>
         </div>
