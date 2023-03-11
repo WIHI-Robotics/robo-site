@@ -59,6 +59,10 @@ p.card-text.fs-6 {
     line-height: 1.15;
 }
 
+div.carousel-item {
+    max-height: 800px !important;
+}
+
 @media only screen and (max-width: 700px) {
     img.person-img {
         height: 150px;
@@ -70,5 +74,9 @@ p.card-text.fs-6 {
 
     div.container.members {
         width: 90vw !important;
+    }
+
+    div.jumbotron {
+        width: 90vw;
     }
 }

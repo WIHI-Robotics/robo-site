@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>WIHI Robotics - Our Robot</title>
+    <script src="../../resources/scripts/navShrink.js" defer></script>
+    <script src="../../resources/scripts/roboPicChanger.js" defer></script>
+    <link rel="stylesheet" href="../../resources/styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5 py-3 sticky-top">
@@ -28,8 +33,8 @@
                             About
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a href="../../pages/about/team.html" class="dropdown-item active" aria-current="page">Team</a></li>
-                            <li><a href="../../pages/about/robot.html" class="dropdown-item">Robot</a></li>
+                            <li><a href="../../pages/about/team.html" class="dropdown-item" aria-current="page">Team</a></li>
+                            <li><a href="../../pages/about/robot.html" class="dropdown-item active" aria-current="page">Robot</a></li>
                             <li><a href="../../pages/about/values.html" class="dropdown-item">Values</a></li>
                             <li><a href="../../pages/about/competition.html" class="dropdown-item">Competition</a></li>
                         </ul>
@@ -48,5 +53,127 @@
         </div>
     </div>
 </nav>
+
+<div class="jumbotron bg-light border rounded mx-auto my-5 p-4" style="width: 80vw;">
+    <div class="container-sm">
+        <h1 class="display-4">Our Robot</h1>
+        <p class="lead">Our robot was designed for the FIRST Robotics Competition (FRC). This page lists its components, functions, and design methodologies.</p>
+        <a class="btn btn-primary btn-lg mx-auto text-center" href="#photo-gallery" role="button">See the bot</a>
+    </div>
+</div>
+
+<div class="container my-5 robo-design" style="width: 80vw">
+    <h2 class="display-5 mb-3 text-center">Design Process</h2>
+    <div class="accordion" id="robotStoryAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="initialPlanningHeading">
+                <button class="accordion-button fs-4 text" type="button" data-bs-toggle="collapse" data-bs-target="#initialPlanning" aria-expanded="true" aria-controls="initialPlanning">
+                    Kickoff & Planning
+                </button>
+            </h2>
+            <div id="initialPlanning" class="accordion-collapse collapse show" aria-labelledby="initialPlanningHeading" data-bs-parent="#robotStoryAccordion">
+                <div class="accordion-body">
+                    The season kicked off at the University of Michigan in Ann Arbor on January 7th.
+                    There we learned <a href="../../pages/about/competition.html" class="link-secondary">the rules of this year's competition</a>, and did lots of other fun engineer-y things.
+                    At our first meetings afterward, we separated into teams and started planning our build.
+                    Some chose to work on construction, some on design, and others became specialists in the rules.
+                    Once we knew what our jobs were, we began to design and build the important additions to the existing chassis.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="designConstructionHeading">
+                <button class="accordion-button collapsed fs-4 text" type="button" data-bs-toggle="collapse" data-bs-target="#designConstruction" aria-expanded="false" aria-controls="designConstruction">
+                    Design & Construction
+                </button>
+            </h2>
+            <div id="designConstruction" class="accordion-collapse collapse" aria-labelledby="designConstructionHeading" data-bs-parent="#robotStoryAccordion">
+                <div class="accordion-body">
+                    Initially drawing inspiration from the University of Michigan's <em>Robot in 3 Days</em>, we decided to use an arm with a claw on the end to grab and move the game pieces.
+                    After some research, we decided on a three-part mechanism: an elevator, an arm, and a claw.
+                    We began construction, and while there were a few hickups, in the end we had a chain-powered elevator lifting and lowering a belt-powered linear extender with a servo-powered claw on the end.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="programmingCompetitionHeading">
+                <button class="accordion-button collapsed fs-4 text" type="button" data-bs-toggle="collapse" data-bs-target="#programmingCompetition" aria-expanded="false" aria-controls="programmingCompetition">
+                    Programming & Competition
+                </button>
+            </h2>
+            <div id="programmingCompetition" class="accordion-collapse collapse" aria-labelledby="programmingCompetitionHeading" data-bs-parent="#robotStoryAccordion">
+                <div class="accordion-body">
+                    While programming the new parts was difficult, requiring more libraries and more complex code on our already-overworked tiny CPU, we were able to power the arm properly and control it smoothly.
+                    In our first competition, however, the arm was damaged, and we were forced to take on a more defensive role.
+                    We powered through, though, and placed highly for a school of our size, highly enough to move on and continue competing.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container grid my-5 robo-specs" style="width: 80vw">
+    <h2 class="display-5 mb-3 text-center">Specifications</h2>
+    <div class="row g-3">
+        <div class="col-lg my-3">
+            <div class="card robo-specs-card">
+                <div class="card-header fs-5 fw-semi-bold text">
+                    Components
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Tank-drive 4-wheel chassis</li>
+                    <li class="list-group-item">4-corner bumper, in blue & red</li>
+                    <li class="list-group-item">Elevator system to move arm</li>
+                    <li class="list-group-item">Linear slide acting as an arm</li>
+                    <li class="list-group-item">Robotic claw at the end of the arm</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg my-3">
+            <div class="card robo-specs-card">
+                <div class="card-header fs-5 fw-semi-bold text">
+                    Functions & Features
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Moves & brakes fast (top speed 20mph+)</li>
+                    <li class="list-group-item">Picks up game pieces (cones & cubes)</li>
+                    <li class="list-group-item">Places game pieces in scoring zones</li>
+                    <li class="list-group-item">Defends strongly, it's real big and heavy</li>
+                    <li class="list-group-item">Adheres to all FRC regulations</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5" id="photo-gallery" style="width: 75vw;">
+    <h2 class="display-5 mb-3 text-center">Photos</h2>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../../resources/images/robot/1.jpg" class="d-block w-100 robo-pic" id="robo-pic-1" alt="robot-1">
+            </div>
+            <div class="carousel-item">
+                <img src="../../resources/images/robot/2.jpg" class="d-block w-100 robo-pic" id="robo-pic-2" alt="robot-2">
+            </div>
+            <div class="carousel-item">
+                <img src="../../resources/images/robot/3.jpg" class="d-block w-100 robo-pic" id="robo-pic-3" alt="robot-3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
 </body>
 </html>
