@@ -40,7 +40,7 @@ div.member-card {
 
 div.card-body.person-desc {
     max-height: 200px;
-    overflow: scroll;
+    overflow: hidden scroll;
 }
 
 div.img-holder {
