@@ -1,7 +1,7 @@
 const navbar = document.querySelector('nav.navbar')
 const navLogoImage = document.querySelector('img#logo')
 const navMenuButton = document.querySelector('button.navbar-toggler')
-const navLinks = document.querySelectorAll('a.nav-link')
+const navLinks = document.querySelectorAll('a.nav-link.shrinks')
 
 navLinks.forEach(link => {
     link.classList.add('fs-5')
