@@ -1,3 +1,7 @@
+body, body>* {
+    transition: all 0.2s ease-in-out;
+}
+
 nav.navbar {
     z-index: 99;
     transition: 0.4s;
@@ -16,16 +20,11 @@ button.navbar-toggler {
 }
 
 div.sponsor-card:hover {
-    transform: translateY(-10px);
     cursor: pointer;
-    box-shadow: hsl(0, 0%, 40%) 0 10px 7px;
-    transition: transform 0.4s, box-shadow 0.2s ease-out;
 }
 
 div.sponsor-card:active {
-    transform: none;
-    box-shadow: inset 4px 4px 4px hsl(0, 0%, 40%), 2px 2px 2px hsl(0, 0%, 40%);
-    transition: transform 0.4s, box-shadow 0.4s;
+    opacity: 0.9;
 }
 
 ul.navbar-nav>li.nav-item {
@@ -61,6 +60,31 @@ p.card-text.fs-6 {
 
 div.carousel-item {
     max-height: 800px !important;
+}
+
+button#bd-theme {
+    filter: brightness(80%);
+    transition: filter 0.2s;
+}
+
+button#bd-theme:hover, button#bd-theme:active, button#bd-theme:focus {
+    filter: brightness(95%);
+}
+
+button#bd-theme>svg {
+    margin: auto 10px auto auto;
+    height: 20px;
+    width: 20px;
+}
+
+ul[aria-labelledby="bd-theme"]>li>button>svg {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+}
+
+svg.bi {
+    transition: transform 0.4s;
 }
 
 @media only screen and (max-width: 720px) {
