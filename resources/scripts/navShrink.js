@@ -9,7 +9,7 @@ navLinks.forEach(link => {
 
 const shrinkNav = () => {
     if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
-        navMenuButton.style.transform = "scale(0.667)"
+        navMenuButton.style.transform = "scale(0.8)"
         navLogoImage.width = 50
         if (navbar.classList.contains('py-3')) {
             navbar.classList.remove('py-3')
@@ -22,7 +22,7 @@ const shrinkNav = () => {
         })
     } else {
         navMenuButton.style.transform = "none"
-        navLogoImage.width = 75
+        navLogoImage.width = 60
         if (!navbar.classList.contains('py-3')) {
             navbar.classList.add('py-3')
         }

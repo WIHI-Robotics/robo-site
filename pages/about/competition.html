@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>WIHI Robotics - About FRC</title>
+    <script src="../../resources/scripts/navShrink.js" defer></script>
+    <link rel="stylesheet" href="../../resources/styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5 py-3 sticky-top">
     <div class="container-fluid">
         <a href="../../index.html" class="navbar-brand">
-            <img id="logo" src="../../resources/images/robo-wolves.png" alt="Logo" width="75" class="d-inline-block align-text-md">
+            <img id="logo" src="../../resources/images/robo-wolves.png" alt="Logo" width="75"
+                 class="d-inline-block align-text-md">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+                aria-controls="offcanvasDarkNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end fs-5 text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas offcanvas-end fs-5 text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+             aria-labelledby="offcanvasDarkNavbarLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">WIHI Robotics</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -24,23 +35,26 @@
                         <a href="../../index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
+                        <a href="#" class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false" aria-current="page">
                             About
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a href="../../pages/about/team.html" class="dropdown-item active" aria-current="page">Team</a></li>
+                            <li><a href="../../pages/about/team.html" class="dropdown-item">Team</a></li>
                             <li><a href="../../pages/about/robot.html" class="dropdown-item">Robot</a></li>
                             <li><a href="../../pages/about/values.html" class="dropdown-item">Values</a></li>
-                            <li><a href="../../pages/about/competition.html" class="dropdown-item">Competition</a></li>
+                            <li><a href="../../pages/about/competition.html" class="dropdown-item active"
+                                   aria-current="page">Competition</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
                             Sponsorship
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark">
                             <li><a href="../../pages/sponsorship/list.html" class="dropdown-item">Sponsor List</a></li>
-                            <li><a href="../../pages/sponsorship/become-sponsor.html" class="dropdown-item">Become A Sponsor</a></li>
+                            <li><a href="../../pages/sponsorship/sponsor.html" class="dropdown-item">Become A Sponsor</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -48,5 +62,66 @@
         </div>
     </div>
 </nav>
+
+<div class="jumbotron border bg-light rounded mx-auto my-5 p-4" style="width: 80vw;">
+    <div class="container-sm">
+        <h1 class="display-4">The FIRST Robotics Competition (FRC)</h1>
+        <p class="lead">Our team competes in the FIRST Robotics Competition, but what exactly is that?</p>
+        <a class="btn btn-primary btn-lg mx-auto text-center" href="https://www.firstinspires.org/robotics/frc"
+           target="_blank" role="button">FRC website</a>
+    </div>
+</div>
+
+<div class="container" style="width: 80vw">
+    <div class="card paragraph my-3" id="about-first">
+        <div class="card-header fs-6 text-muted fw-semibold">
+            FIRST
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Inspiring the Next Generation of Innovators</h5>
+            <p class="card-text">
+                FIRST (For Inspiration and Recognition of Science and Technology) is a non-profit which aims to inspire
+                young people to become leaders in STEM fields.
+                Founded in 1989 by Dean Kamen, FIRST provides students with hands-on experience in STEM through robotics
+                competitions and mentorship programs.
+                Through these programs, FIRST aims to foster a passion for STEM education, promote teamwork and
+                problem-solving skills, and develop the next generation of innovators and leaders.
+            </p>
+        </div>
+    </div>
+    <div class="card paragraph my-3" id="about-frc">
+        <div class="card-header fs-6 text-muted fw-semibold">
+            FRC
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">High School Robotics Competition at Its Best</h5>
+            <p class="card-text">
+                FIRST Robotics Competition (FRC) is a program designed to provide high school students with the
+                opportunity to design, build, and compete with robots.
+                Each year, FRC releases a new game that challenges teams to build a robot that can complete various
+                tasks and objectives.
+                Students develop important skills in leadership, communication, and critical thinking.
+                FRC culminates in regional and national competitions, where teams from all over the world come together
+                to compete.
+            </p>
+        </div>
+    </div>
+    <div class="card paragraph my-3" id="about-game">
+        <div class="card-header fs-6 text-muted fw-semibold">
+            Charged Up
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">The 2023 FRC Game</h5>
+            <p class="card-text">
+                Charged Up is the 2023 FIRST Robotics Competition game.
+                In this game, teams must design and build robots that can collect and place game pieces into a series of
+                goals.
+                The game also features a balancing platform that tests driver dexterity and construction precision.
+                Charged Up is designed to challenge teams to think creatively and strategically, as well as showcase
+                their skills in design, engineering, and programming.
+            </p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
