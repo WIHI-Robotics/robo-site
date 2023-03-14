@@ -1,0 +1,116 @@
+$primary: hsl(210, 50%, 50%);
+$btn-link-color: #EEE;
+$btn-link-hover-color: #EEE;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+body, body > * {
+  transition: all 0.2s ease-in-out;
+}
+
+nav.navbar {
+  z-index: 99;
+  transition: 0.4s;
+}
+
+img#logo {
+  transition: 0.4s;
+}
+
+a.nav-link {
+  transition: 0.4s;
+}
+
+button.navbar-toggler {
+  transition: 0.4s;
+}
+
+div.jumbotron {
+  margin-top: 150px !important;
+}
+
+div.sponsor-card:hover {
+  cursor: pointer;
+}
+
+div.sponsor-card:active {
+  opacity: 0.9;
+}
+
+ul.navbar-nav > li.nav-item {
+  margin: 0 5% 0 0;
+}
+
+div.member-card {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+div.card-body.person-desc {
+  max-height: 200px;
+  overflow: hidden scroll;
+}
+
+div.img-holder {
+  height: min-content;
+  width: max-content;
+}
+
+img.person-img {
+  height: 200px;
+  width: auto;
+  overflow: hidden;
+}
+
+p.card-text.fs-6 {
+  font-size: 14pt !important;
+  line-height: 1.15;
+}
+
+div.carousel-item {
+  max-height: 800px !important;
+}
+
+button#bd-theme {
+  filter: brightness(80%);
+  transition: filter 0.2s;
+}
+
+button#bd-theme:hover, button#bd-theme:active, button#bd-theme:focus {
+  filter: brightness(95%);
+}
+
+button#bd-theme > svg {
+  margin: auto 10px auto auto;
+  height: 20px;
+  width: 20px;
+}
+
+ul[aria-labelledby="bd-theme"] > li > button > svg {
+  height: 20px;
+  width: 20px;
+  margin-right: 20px;
+}
+
+svg.bi {
+  transition: transform 0.4s;
+}
+
+@media only screen and (max-width: 720px) {
+  img.person-img {
+    height: 150px;
+  }
+
+  div.card-body.person-desc {
+    max-height: 150px;
+  }
+
+  div.container.members {
+    width: 90vw !important;
+  }
+
+  div.jumbotron {
+    width: 90vw;
+  }
+}
