@@ -11610,7 +11610,6 @@ textarea.form-control-lg {
 }
 body, body > * {
   transition: all 0.2s ease-in-out;
-  transition: transform, position 0s;
 }
 
 nav.navbar {
