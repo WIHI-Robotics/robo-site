@@ -11633,7 +11633,7 @@ div.jumbotron {
   margin-top: 150px !important;
 }
 
-div.sponsor-card:hover {
+div.sponsor-card>img:hover {
   cursor: pointer;
 }
 
