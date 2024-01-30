@@ -1,11 +1,6 @@
 {
   "name": "robo-site",
   "description": "Website for WIHI Robowolves https://wihirobotics.org",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WIHI-Robotics/robo-site.git"
