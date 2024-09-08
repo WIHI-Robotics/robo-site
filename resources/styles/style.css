@@ -619,6 +619,15 @@ progress {
 	vertical-align: baseline;
 }
 
+.header-img {
+  width: 100%;
+	max-width: 800px;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	border-radius: 20px;
+}
+
 [hidden] {
 	display: none !important;
 }
