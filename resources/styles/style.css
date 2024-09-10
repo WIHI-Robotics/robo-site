@@ -12061,6 +12061,7 @@ img.person-img {
 	width: auto;
 	overflow: hidden;
 	padding: 20px;
+	border-radius: 15px;
 }
 
 p.card-text.fs-6 {
