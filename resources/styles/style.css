@@ -12047,21 +12047,23 @@ div.member-card {
 }
 
 div.card-body.person-desc {
-	max-height: 200px;
+	max-height: 250px;
 	overflow: hidden scroll;
 }
 
 div.img-holder {
 	height: min-content;
 	width: max-content;
+	align-self: center;
+	vertical-align: middle;
 }
 
 img.person-img {
 	height: 200px;
 	width: auto;
 	overflow: hidden;
-	padding: 20px;
-	border-radius: 15px;
+	padding: 10px;
+	border-radius: 25px;
 }
 
 p.card-text.fs-6 {
