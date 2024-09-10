@@ -12060,6 +12060,7 @@ img.person-img {
 	height: 200px;
 	width: auto;
 	overflow: hidden;
+	padding: 20px;
 }
 
 p.card-text.fs-6 {
