@@ -247,12 +247,9 @@ h1,
 	}
 }
 
-
 #ourMissionButton {
-	margin-top:10px
+	margin-top: 10px;
 }
-
-
 
 h2,
 .h2 {
@@ -620,11 +617,11 @@ progress {
 }
 
 .header-img {
-  width: 100%;
+	width: 100%;
 	max-width: 1200px;
 	display: block;
-  margin-left: auto;
-  margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 	border-radius: 20px;
 }
 
@@ -12029,7 +12026,6 @@ div.jumbotron {
 
 div.sponsor-card > img:hover {
 	cursor: pointer;
-
 }
 
 div.sponsor-card:active {
