@@ -12047,8 +12047,8 @@ div.member-card {
 }
 
 div.card-body.person-desc {
-	max-height: 250px;
-	overflow: hidden scroll;
+	height: 300px;
+	overflow: hidden;
 }
 
 div.img-holder {
@@ -12059,10 +12059,10 @@ div.img-holder {
 }
 
 img.person-img {
-	height: 200px;
+	height: 300px;
 	width: auto;
 	overflow: hidden;
-	padding: 10px;
+	padding: 15px;
 	border-radius: 25px;
 }
 
